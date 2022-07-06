@@ -1,0 +1,12 @@
+<h1>Login Page</h1>
+<%= form_for @user, url: login_path(@user) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <br>
+    <%= f.submit "Log in" %>
+<% end %>
+
+<%= link_to "Signup page", signup_prompt_path %>
